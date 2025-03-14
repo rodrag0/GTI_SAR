@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 120150124c62d2145b95f2476ca28f7a
+timeCreated: 1462814852
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 62518
+  packageName: Hand-Painted stones in the snow
+  packageVersion: 1.0
+  assetPath: Assets/SnowStone/Materials/SnowStoneTexture2.mat
+  uploadId: 117027

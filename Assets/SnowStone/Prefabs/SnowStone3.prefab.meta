@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: e63b832be2d35d14fa4dcbac99cdd494
+timeCreated: 1462826467
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 62518
+  packageName: Hand-Painted stones in the snow
+  packageVersion: 1.0
+  assetPath: Assets/SnowStone/Prefabs/SnowStone3.prefab
+  uploadId: 117027
