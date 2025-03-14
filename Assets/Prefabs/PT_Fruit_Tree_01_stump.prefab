@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 8307454768731561986}
   - component: {fileID: 2337066502398758474}
   - component: {fileID: 2344359924681587789}
+  - component: {fileID: 3980108712867369703}
+  - component: {fileID: 4731178970750252129}
   m_Layer: 0
   m_Name: PT_Fruit_Tree_01_stump
   m_TagString: Untagged
@@ -27,7 +29,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2223624022891695829}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 72.91, y: 1.1686913, z: 103.59}
   m_LocalScale: {x: 4, y: 4, z: 4}
   m_ConstrainProportionsScale: 0
@@ -102,4 +104,39 @@ MonoBehaviour:
   isOnFire: 0
   fireEffectPrefab: {fileID: 3046491615428916574, guid: 06f58f4ff98992b4493fdaf11b684c3b, type: 3}
   propagationDelay: 2
-  propagationRadius: 3
+  propagationRadius: 4
+--- !u!114 &3980108712867369703
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2223624022891695829}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 537374a90efba4540ad9d6e12c266fa7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Fire: {fileID: 2344359924681587789}
+--- !u!64 &4731178970750252129
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2223624022891695829}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 494737336489812136, guid: f42a2ed0c78e45643bba339ed33235d4, type: 3}

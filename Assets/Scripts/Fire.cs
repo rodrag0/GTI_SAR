@@ -69,9 +69,14 @@ public class Fire : MonoBehaviour
 
             // Get the Fire component from the nearby cube.
             Fire otherCube = nearby.GetComponent<Fire>();
-            if (otherCube != null && !otherCube.isOnFire)
+
+            if (otherCube != null)
             {
-                otherCube.Ignite();
+                Debug.Log("GameObject Name: " + otherCube.name);
+                if(!otherCube.isOnFire){
+                    otherCube.Ignite();
+                }
+                
                
             }
         }
