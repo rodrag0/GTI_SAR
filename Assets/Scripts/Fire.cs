@@ -9,10 +9,14 @@ public class Fire : MonoBehaviour
     [Tooltip("Particle system prefab to display fire")]
     public ParticleSystem fireEffectPrefab;
     [Tooltip("Delay (in seconds) before spreading fire to nearby cubes")]
-    public float propagationDelay = 2f;
+   public float propagationDelay = 2f;
+    [Tooltip("Delay (in seconds) before destroying the object")]
+    public float charDelay = 2f;
     [Tooltip("Radius within which to search for cubes to ignite")]
     public float propagationRadius = 2f;
-
+    /*public float rotx = -90;
+    public float roty = -90;
+    public float rotz = -90;*/
     // Used to ensure fire is only spread once from this cube
     private bool hasSpread = false;
     private ParticleSystem fireInstance;
@@ -36,19 +40,24 @@ public class Fire : MonoBehaviour
         isOnFire = true;
         StartFireEffect();
         StartCoroutine(SpreadFire());
+         StartCoroutine(charObject());
     }
 
     // Instantiate and play the fire effect at the cube's position.
-    private void StartFireEffect()
+private void StartFireEffect()
+{
+    if (fireEffectPrefab != null)
     {
-        if (fireEffectPrefab != null)
-        {
-            // Instantiate the fire effect as a child so it follows the cube.
-            fireInstance = Instantiate(fireEffectPrefab, transform.position, Quaternion.identity, transform);
-            fireInstance.Play();
-        }
-    }
+        // Instantiate fire effect with correct world rotation
+        fireInstance = Instantiate(fireEffectPrefab, transform.position, Quaternion.identity, transform);
 
+        // Manually set rotation to match the world, not local rotation
+        fireInstance.transform.rotation = Quaternion.Euler(-90, -90, -90);
+
+        fireInstance.Play();
+
+    }
+}
     // After a delay, check for nearby cubes to ignite.
     private IEnumerator SpreadFire()
     {
@@ -87,5 +96,11 @@ public class Fire : MonoBehaviour
     {
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position, propagationRadius);
+    }
+    private IEnumerator charObject()
+    {
+        yield return new WaitForSeconds(charDelay);
+        Destroy(fireInstance.gameObject);
+        Destroy(gameObject);
     }
 }
