@@ -1179,9 +1179,25 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 67.3
       objectReference: {fileID: 0}
+    - target: {fileID: 2926519523100479007, guid: 490d317ff5a7e37449a3b32ea40860b8, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+    - target: {fileID: 2926519523100479007, guid: 490d317ff5a7e37449a3b32ea40860b8, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+    - target: {fileID: 2926519523100479007, guid: 490d317ff5a7e37449a3b32ea40860b8, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3856610060674964135, guid: 490d317ff5a7e37449a3b32ea40860b8, type: 3}
       propertyPath: m_text
       value: NA
+      objectReference: {fileID: 0}
+    - target: {fileID: 3856610060674964135, guid: 490d317ff5a7e37449a3b32ea40860b8, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6026918757948726110, guid: 490d317ff5a7e37449a3b32ea40860b8, type: 3}
       propertyPath: m_Name
@@ -1191,9 +1207,25 @@ PrefabInstance:
       propertyPath: m_text
       value: NA
       objectReference: {fileID: 0}
+    - target: {fileID: 8276704668902976688, guid: 490d317ff5a7e37449a3b32ea40860b8, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+    - target: {fileID: 8276704668902976688, guid: 490d317ff5a7e37449a3b32ea40860b8, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+    - target: {fileID: 8276704668902976688, guid: 490d317ff5a7e37449a3b32ea40860b8, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8507634138743791175, guid: 490d317ff5a7e37449a3b32ea40860b8, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 10.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 9068390978701766934, guid: 490d317ff5a7e37449a3b32ea40860b8, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
