@@ -1,12 +1,16 @@
 using UnityEngine;
-
+using TMPro;
 public class fireContact : MonoBehaviour
 {
+    public TMP_Text fireText;
     void OnTriggerStay(Collider other)
     {
         if(other.tag == "fire")
         {
-             Debug.Log(other.name + "'  temperature could be fire");
+            fireText.text = "Temperature: Fire";
+        }else
+        {
+            fireText.text = "Temperature: Normal";
         }
        
     }
