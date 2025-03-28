@@ -156,6 +156,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88366a58b9452264b9d373c250e01488, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fireText: {fileID: 0}
 --- !u!54 &2886973924863583741
 Rigidbody:
   m_ObjectHideFlags: 0
